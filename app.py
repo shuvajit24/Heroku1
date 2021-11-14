@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import joblib
 app_flask = Flask(__name__)
 
-loaded_model = joblib.load(r'D:\New System\Data Science\WVS\save_folder\Flask application\dib_78.pkl')
+loaded_model = joblib.load('dib_78.pkl')
 @app_flask.route('/')
 def index():
     return 'hello world'
